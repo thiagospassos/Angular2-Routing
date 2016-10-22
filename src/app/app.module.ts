@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ShareComponent } from './share/share.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminPermissionsComponent } from './admin/admin-permissions.component';
 import { MaterialModule } from '@angular/material';
@@ -15,7 +16,8 @@ import { routedComponents } from './app.routes';
     AppComponent,
     HomeComponent,
     AdminComponent,
-    AdminPermissionsComponent
+    AdminPermissionsComponent,
+    ShareComponent
   ],
   imports: [
     BrowserModule,

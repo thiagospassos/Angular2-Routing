@@ -1,10 +1,11 @@
 <md-sidenav-layout [class.m2app-dark]="isDarkTheme">
 	<md-toolbar color="primary">
-	Angular Material2 Example App
+		Angular Material2 Example App
 		<span class="app-toolbar-filler"></span>
 		<button md-button routerLink='/'>Home</button>
 		<button md-button routerLink='admin'>Admin</button>
 		<button md-button routerLink='admin/permissions'>Permissions</button>
+		<button md-button [routerLink]="[{outlets:{'bottom':['share']}}]">Share</button>
 	</md-toolbar>
 	<div class="app-content">
 		<md-card>
@@ -12,3 +13,6 @@
 		</md-card>
 	</div>
 </md-sidenav-layout>
+
+
+<router-outlet name='bottom'></router-outlet>
